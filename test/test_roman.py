@@ -54,3 +54,13 @@ def test_50():
 def test_99():
     answer = roman_convert(99)
     assert answer == "XCIX"
+
+
+def test_100():
+    answer = roman_convert(100)
+    assert answer == "C"
+
+
+def test_499():
+    answer = roman_convert(499)
+    assert answer == "CDXCIX"
