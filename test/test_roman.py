@@ -14,3 +14,8 @@ def test_three():
 def test_four():
     answer = roman_convert(4)
     assert answer == "IV"
+
+
+def test_five():
+    answer = roman_convert(5)
+    assert answer == "V"
