@@ -29,3 +29,8 @@ def test_eight():
 def test_nine():
     answer = roman_convert(9)
     assert answer == "IX"
+
+
+def test_ten():
+    answer = roman_convert(10)
+    assert answer == "X"
