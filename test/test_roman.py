@@ -9,3 +9,8 @@ def test_one():
 def test_three():
     answer = roman_convert(3)
     assert answer == "III"
+
+
+def test_four():
+    answer = roman_convert(4)
+    assert answer == "IV"
