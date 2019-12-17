@@ -14,3 +14,10 @@ def roman_convert(number_to_convert):
     all_i = all_i.replace("CCCC", "CD")
 
     return all_i
+
+
+def roman_reverse(string_value):
+    strip_to_i = string_value
+    strip_to_i = strip_to_i.replace("IV", "IIII")
+    number_is = len(strip_to_i)
+    return number_is
