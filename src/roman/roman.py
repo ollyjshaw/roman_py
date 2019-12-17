@@ -18,6 +18,17 @@ def roman_convert(number_to_convert):
 
 def roman_reverse(string_value):
     strip_to_i = string_value
+    strip_to_i = strip_to_i.replace("CD", "CCCC")
+    strip_to_i = strip_to_i.replace("D", "CCCCC")
+    strip_to_i = strip_to_i.replace("CM", "CCCCCCCCC")
+    strip_to_i = strip_to_i.replace("M", "CCCCCCCCCC")
+    strip_to_i = strip_to_i.replace("XC", "XXXXXXXXX")
+    strip_to_i = strip_to_i.replace("C", "XXXXXXXXXX")
+    strip_to_i = strip_to_i.replace("XL", "XXXX")
+    strip_to_i = strip_to_i.replace("L", "XXXXX")
+    strip_to_i = strip_to_i.replace("IX", "IIIIIIIII")
+    strip_to_i = strip_to_i.replace("X", "IIIIIIIIII")
     strip_to_i = strip_to_i.replace("IV", "IIII")
+    strip_to_i = strip_to_i.replace("V", "IIIII")
     number_is = len(strip_to_i)
     return number_is
