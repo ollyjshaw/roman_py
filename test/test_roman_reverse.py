@@ -31,6 +31,16 @@ def test_10():
     assert answer == 10
 
 
+def test_14():
+    answer = roman_reverse('XIV')
+    assert answer == 14
+
+
+def test_15():
+    answer = roman_reverse('XV')
+    assert answer == 15
+
+
 def test_19():
     answer = roman_reverse('XIX')
     assert answer == 19

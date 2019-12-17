@@ -22,13 +22,20 @@ def roman_reverse(string_value):
     strip_to_i = strip_to_i.replace("D", "CCCCC")
     strip_to_i = strip_to_i.replace("CM", "CCCCCCCCC")
     strip_to_i = strip_to_i.replace("M", "CCCCCCCCCC")
-    strip_to_i = strip_to_i.replace("XC", "XXXXXXXXX")
-    strip_to_i = strip_to_i.replace("C", "XXXXXXXXXX")
     strip_to_i = strip_to_i.replace("XL", "XXXX")
     strip_to_i = strip_to_i.replace("L", "XXXXX")
-    strip_to_i = strip_to_i.replace("IX", "IIIIIIIII")
-    strip_to_i = strip_to_i.replace("X", "IIIIIIIIII")
+    strip_to_i = strip_to_i.replace("XC", "XXXXXXXXX")
+    strip_to_i = strip_to_i.replace("C", "XXXXXXXXXX")
     strip_to_i = strip_to_i.replace("IV", "IIII")
     strip_to_i = strip_to_i.replace("V", "IIIII")
+    strip_to_i = strip_to_i.replace("IX", "IIIIIIIII")
+    strip_to_i = strip_to_i.replace("X", "IIIIIIIIII")
     number_is = len(strip_to_i)
     return number_is
+
+
+def roman_add(r1, r2):
+    i1 = roman_reverse(r1)
+    i2 = roman_reverse(r2)
+    added = i1 + i2
+    return roman_convert(added)

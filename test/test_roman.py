@@ -36,6 +36,16 @@ def test_ten():
     assert answer == "X"
 
 
+def test_14():
+    answer = roman_convert(14)
+    assert answer == "XIV"
+
+
+def test_15():
+    answer = roman_convert(15)
+    assert answer == "XV"
+
+
 def test_nineteen():
     answer = roman_convert(19)
     assert answer == "XIX"
