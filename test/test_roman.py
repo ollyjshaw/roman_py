@@ -65,6 +65,12 @@ def test_499():
     answer = roman_convert(499)
     assert answer == "CDXCIX"
 
+
 def test_500():
     answer = roman_convert(500)
     assert answer == "D"
+
+
+def test_999():
+    answer = roman_convert(999)
+    assert answer == "CMXCIX"
